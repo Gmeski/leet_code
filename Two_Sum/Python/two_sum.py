@@ -21,7 +21,7 @@ class Solution:
         cache_dict = {}
 
         for i in range(len(nums)):
-            target_num = -1 * (- target + nums[i] )
+            target_num = target - nums[i]
 
             if nums[i] in cache_dict:
                 return [cache_dict[nums[i]], i]
